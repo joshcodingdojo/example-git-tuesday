@@ -7,6 +7,12 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>index template</h1>
+    <h1>Add User</h1>
+    <form action="/add-user" method="post">
+      {% csrf_token %} First <input type="text" name="first_name" /> Last
+      <input type="text" name="last_name" /> Age
+      <input type="text" name="age" />
+      <button>Add</button>
+    </form>
   </body>
 </html>
